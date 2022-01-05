@@ -11,6 +11,7 @@ pipeline {
             steps {
                 script {
                     sh """
+		        mvn -version
                         mvn -B -DskipTests clean package
                     """
                 }
