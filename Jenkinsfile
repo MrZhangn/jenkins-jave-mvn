@@ -3,7 +3,7 @@ pipeline {
 		registry = "mrzhangn/jenkins-jave-mvn"
 		registryCredential = 'znn'
 		dockerImage = ''
-		dockerRunCommand = 'docker run -dit --name jenkins-jave-mvn mrzhangn/jenkins-jave-mvn:$BUILD_NUMBER'
+		dockerRunCommand = 'docker run -dit --name  myapp mrzhangn/jenkins-jave-mvn:$BUILD_NUMBER'
 	}
 	agent any
 	stages {
