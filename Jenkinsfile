@@ -26,7 +26,7 @@ pipeline {
 				}
 			}
 		}
-		stage("docker run contain") { 
+		stage("docker run container") { 
 			steps {
 				script {
 					sh """
